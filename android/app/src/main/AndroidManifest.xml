@@ -1,5 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.webtoon">
+
+    <queries>
+        <!-- If your app checks for Https support -->
+            <intent>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="https" />
+            </intent>
+        </queries>
+
    <application
         android:label="webtoon"
         android:name="${applicationName}"
@@ -30,5 +39,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+            <!-- Provide required visibility configuration for API level 30 and above -->
     </application>
 </manifest>
