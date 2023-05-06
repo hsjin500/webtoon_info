@@ -3,11 +3,11 @@
 
     <queries>
         <!-- If your app checks for Https support -->
-            <intent>
-                <action android:name="android.intent.action.VIEW" />
-                <data android:scheme="https" />
-            </intent>
-        </queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
    <application
         android:label="webtoon"
